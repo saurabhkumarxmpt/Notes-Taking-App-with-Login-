@@ -16,6 +16,6 @@ app.listen(PORT,(err)=>{
     if(err){
         console.error(err.message);
     }else{
-        console.info("server is runing")
+        console.info("server is runing");
     }
 });
