@@ -1,24 +1,35 @@
 import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const SignupPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-[#e4ecff]">
       <div className="bg-white shadow-xl rounded-2xl flex max-w-4xl w-full overflow-hidden">
         {/* Left Illustration */}
         <div className="hidden md:flex items-center justify-center w-1/2 bg-[#cddcff]">
           <img
-            src='/AuthImages/login.png'
+            src=""
             alt="illustration"
-            className="w-99"
+            className="w-80"
           />
         </div>
 
         {/* Right Form */}
         <div className="w-full md:w-1/2 p-8">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-1">Sign In</h2>
-          <p className="text-gray-500 mb-6">Unlock your world.</p>
+          <h2 className="text-3xl font-semibold text-gray-800 mb-1">Create Account</h2>
+          <p className="text-gray-500 mb-6">Join and start your journey.</p>
 
           <form className="space-y-5">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Full Name
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+
             <div>
               <label className="block text-sm font-medium text-gray-700">
                 Email
@@ -36,7 +47,7 @@ const LoginPage = () => {
               </label>
               <input
                 type="password"
-                placeholder="Enter your password"
+                placeholder="Create password"
                 className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
@@ -45,14 +56,14 @@ const LoginPage = () => {
               type="submit"
               className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-all"
             >
-              Sign In
+              Sign Up
             </button>
           </form>
 
           <p className="text-center text-sm text-gray-600 mt-6">
-            Don’t have an account?{" "}
-            <Link to="/signup" className="text-blue-600 font-semibold">
-              Create one
+            Already have an account?{" "}
+            <Link to="/login" className="text-blue-600 font-semibold">
+              Sign in
             </Link>
           </p>
         </div>
@@ -61,4 +72,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignupPage;
