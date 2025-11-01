@@ -7,7 +7,7 @@ const SignupPage = () => {
         {/* Left Illustration */}
         <div className="hidden md:flex items-center justify-center w-1/2 bg-[#cddcff]">
           <img
-            src=""
+            src="/AuthImages/login.png"
             alt="illustration"
             className="w-80"
           />
